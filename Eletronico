@@ -1,0 +1,23 @@
+public class Eletronico extends Produto {
+    private String processador;
+    private String memoria;
+    private float tamanhoDaTela;
+    private String resolucaoDaTela;
+
+    public Eletronico(String nome, float preco, String marca, String processador, String memoria, float tamanhoDaTela, String resolucaoDaTela) {
+        super(nome, preco, marca);
+        this.processador = processador;
+        this.memoria = memoria;
+        this.tamanhoDaTela = tamanhoDaTela;
+        this.resolucaoDaTela = resolucaoDaTela;
+    }
+
+    @Override
+    public void imprimirDetalhes() {
+        super.imprimirDetalhes();
+        System.out.println("Processador: " + processador);
+        System.out.println("Memória: " + memoria);
+        System.out.println("Tamanho da Tela: " + tamanhoDaTela);
+        System.out.println("Resolução da Tela: " + resolucaoDaTela);
+    }
+}
